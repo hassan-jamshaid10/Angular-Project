@@ -1,0 +1,15 @@
+<h3 class="mt-5 mb-5 text-white">Seat Form</h3>
+<div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="seatNo">Seat Number</label>
+            <input type="text" class="form-control" id="seatNo" required [(ngModel)]="seat.seatNo" name="seatNo">
+        </div>
+        
+      
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <br>
+</div>

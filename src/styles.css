@@ -1,0 +1,115 @@
+/* styles.css */
+
+html, body {
+    height: 100%; /* Set height of html and body to 100% */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.background {
+    background-image: url('./app/Bus.jpg'); 
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+
+
+/* Style for navigation bar */
+.navbar {
+    background-color: #5ca8c8; /* Dark background color */
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Text color */
+    padding: 0.5rem 1rem; /* Padding for the links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000; /* Hover color */
+}
+
+/* Style for container */
+.container {
+    margin-top: 20px; /* Add margin to the top of the container */
+}
+
+
+
+
+
+
+
+
+  
+  /* Style text inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #000000;
+      font-size: 16px;
+      line-height: 1.5;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  
+  
+  /* Style buttons */
+  button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  button:hover {
+      background-color: #0056b3;
+  }
+  
+  
+  /* Add some space between form inputs */
+  .form-group {
+      margin-bottom: 20px;
+  }
+  
+  /* Style form labels */
+  label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #fff;
+  }
+  
+  /* Hide form initially when submitted */
+  form[hidden] {
+      display: none;
+  }
+  
+
+  
+
+
+
+/* Style for footer */
+.footer {
+    background-color: #757070; /* Dark background color */
+    color: #ffffff; /* Text color */
+    padding: 20px 0; /* Padding for the footer content */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

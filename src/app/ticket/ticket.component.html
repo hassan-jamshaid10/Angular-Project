@@ -1,0 +1,29 @@
+<div class="container table_container mt-5 mb-5 p-2">
+    
+    <h2 class="text-center p-3 text-white bg-dark">Ticket</h2>
+
+
+    <!-- Table to display data -->
+    <table class="table  table-striped">
+        <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Date</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr *NgFor="let ticket of tickets">
+                <td>{{ ticket.ticketId }}</td>
+                <td>{{ ticket.ticketDate }}</td>
+                <td>{{ ticket.passenger}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm m-2" (click)="updateTicket(ticket.ticketId)">Update</button>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="deleteTicket(ticket.ticketId)">Delete</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

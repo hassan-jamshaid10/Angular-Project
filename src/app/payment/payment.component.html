@@ -1,0 +1,30 @@
+<div class="container table_container mt-5 mb-5 p-2">
+    
+    <h2 class="text-center p-3 text-white bg-dark">Payment</h2>
+
+
+    <!-- Table to display data -->
+    <table class="table  table-striped">
+        <thead>
+            <tr>
+                <th>Payment ID</th>
+                <th>Type</th>
+                <th>Passenger</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr *NgFor="let payment of payments">
+                <td>{{ payment.paymentId }}</td>
+                <td>{{ payment.type }}</td>
+                <td>{{ payment.passenger.name }}</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm m-2" (click)="updatePayment(payment.paymentId)">Update</button>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="deletePayment(payment.paymentId)">Delete</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

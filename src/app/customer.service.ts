@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class CustomerService {
 
-  private baseUrl = 'http://localhost:4200/passengers';
+  private baseUrl = 'http://localhost:4200/customers';
 
   constructor(private http: HttpClient) { }
 

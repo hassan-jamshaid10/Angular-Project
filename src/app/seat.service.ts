@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class SeatService {
 
 
-  private baseUrl = 'http://localhost:8080/seats';
+  private baseUrl = 'http://localhost:4200/seats';
 
   constructor(private http: HttpClient) { }
 
